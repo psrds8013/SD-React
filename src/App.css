@@ -776,7 +776,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: var(--accent-color);
+    background:  rgb(34 59 81 / 90%);
     left: 0;
     right: 0;
     bottom: 0;
@@ -792,10 +792,10 @@
   --------------------------------------------------------------*/
   .hero {
     width: 100%;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     position: relative;
-    padding: 120px 0 60px 0;
-    display: flex;
+    padding: 101px 0 60px 0;
+    /* display: flex; */
     align-items: center;
   }
   
@@ -1425,9 +1425,16 @@
   }
   
   @media (max-width: 767px) {
+    .hero {
+    
+      padding: 101px 0 0 0;
+    }
     .pricing .box {
       max-width: 80%;
       margin: 0 auto 30px auto;
+    }
+    .section-title h2 {
+      font-size: 25px;
     }
   }
   
