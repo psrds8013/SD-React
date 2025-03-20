@@ -1,34 +1,34 @@
-import React from 'react';
+import React from "react";
 import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <div className="w-3/12 mt-5 md:w-full">
-                <div className="drop-shadow-md bg-white h-full left-menu py-3">
+      <nav id="navmenu" className="navmenu">
+            <ul>
+                <li><a href="#hero" className="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Contact Us</a></li>
+                <li><a href="#portfolio">Login</a></li>
+                {/* <li className="dropdown"><a href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                    <li><a href="#">Dropdown 1</a></li>
+                    <li className="dropdown"><a href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">Home</a>
-                        </li>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">Shows</a>
-                        </li>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">About Us</a>
-                        </li>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">About Us</a>
-                        </li>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">My Account</a>
-                        </li>
-                        <li className="my-1">
-                            <a href="#" className="hover:bg-purple-900 hover:text-white text-black block px-5 sm:px-3 py-2.5">Log In</a>
-                        </li>
+                        <li><a href="#">Deep Dropdown 1</a></li>
+                        <li><a href="#">Deep Dropdown 2</a></li>
+                        <li><a href="#">Deep Dropdown 3</a></li>
+                        <li><a href="#">Deep Dropdown 4</a></li>
+                        <li><a href="#">Deep Dropdown 5</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
+                    </li>
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                </ul>
+                </li> */}
+            </ul>
+            <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
     );
-};
+  };
 export default Navbar;
