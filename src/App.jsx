@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import './App.css';
+import './assets/js/main.jsx';
 import BannerImage from "./assets/img/banner.jpg";
 import FeaturedShows from "./assets/img/ticket-icon.svg";
 import FeaturedImage1 from "./assets/img/the-last-laugh-image-1730348173-870.jpg";
@@ -25,7 +26,7 @@ function App() {
         </section>
         <section id="features" className="features section">
           <div className="container section-title" data-aos="fade-up">
-            <h2><img className="inline-block" src={FeaturedShows} alt="Featured Shows"/> Featured Shows</h2>
+            <img className="inline-block" src={FeaturedShows} alt="Featured Shows"/><h2>Featured Shows</h2>
             <p>Discover top-rated and trending shows handpicked for you. Stay entertained with the best in drama, comedy, and more!</p>
           </div>
           <div className="container" data-aos="fade-up" data-aos-delay="100">
