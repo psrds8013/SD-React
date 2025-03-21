@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Component/Header';
 import Footer from './Component/Footer';
 import './App.css';
-import './assets/js/main.jsx';
 import BannerImage from "./assets/img/banner.jpg";
 import FeaturedShows from "./assets/img/ticket-icon.svg";
 import FeaturedImage1 from "./assets/img/the-last-laugh-image-1730348173-870.jpg";
@@ -26,88 +25,66 @@ function App() {
         </section>
         <section id="features" className="features section">
           <div className="container section-title" data-aos="fade-up">
-            <img className="inline-block" src={FeaturedShows} alt="Featured Shows"/><h2>Featured Shows</h2>
+            <div className='d-flex align-items-center justify-content-center '>
+              <h2><img className="featured-shows-icon" src={FeaturedShows} alt="Featured Shows"/>Featured Shows</h2>
+            </div>
             <p>Discover top-rated and trending shows handpicked for you. Stay entertained with the best in drama, comedy, and more!</p>
           </div>
-          <div className="container" data-aos="fade-up" data-aos-delay="100">
+          <div className="container">
             <div className="row gy-5">
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage1} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" className="show-image" alt="The Last Laugh"/>
+                      <div className="show-details">
+                          <h3 className="show-title">The Last Laugh</h3>
+                          <p className="show-genre">Noël Coward Theatre</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>The Last Laugh</h3>
-                    </a>
-                    <p>Noël Coward Theatre</p>
-                  </div>
-                </div>
               </div>
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage2} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" className="show-image" alt="Come Alive"/>
+                      <div className="show-details">
+                          <h3 className="show-title">Come Alive</h3>
+                          <p className="show-genre">The Empress Museum</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>Come Alive</h3>
-                    </a>
-                    <p>The Empress Museum</p>
-                  </div>
-                </div>
               </div>
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage3} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" className="show-image" alt="Punch"/>
+                      <div className="show-details">
+                          <h3 class="show-title">Punch</h3>
+                          <p class="show-genre">Young Vic</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>Punch</h3>
-                    </a>
-                    <p>Young Vic</p>
-                  </div>
-                </div>
               </div>
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage4} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" className="show-image" alt="My Neighbour Totoro"/>
+                      <div className="show-details">
+                          <h3 className="show-title">My Neighbour Totoro</h3>
+                          <p className="show-genre">Gillian Lynne Theatre</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>My Neighbour Totoro</h3>
-                    </a>
-                    <p>Gillian Lynne Theatre</p>
-                  </div>
-                </div>
               </div>
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage5} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" className="show-image" alt="The Score"/>
+                      <div className="show-details">
+                          <h3 className="show-title">The Score</h3>
+                          <p className="show-genre">Theatre Royal Haymarket</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>The Score</h3>
-                    </a>
-                    <p>Theatre Royal Haymarket</p>
-                  </div>
-                </div>
               </div>
-              <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
-                <div className="service-item">
-                  <div className="img">
-                    <img src={FeaturedImage6} className="img-fluid" alt=""/>
+              <div className="col-lg-4 col-md-6 mb-4">
+                  <div className="show-item">
+                      <img src="https://seconddegree.co.uk/uploads/event/come-alive-image-1721213649-826_copy.jpg" class="show-image" alt="The Years"/>
+                      <div className="show-details">
+                          <h3 className="show-title">The Years</h3>
+                          <p className="show-genre">Harold Pinter Theatre</p>
+                      </div>
                   </div>
-                  <div className="details position-relative">
-                    <a href="service-details.html" className="stretched-link">
-                      <h3>The Years</h3>
-                    </a>
-                    <p>Harold Pinter Theatre</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
